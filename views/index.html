@@ -14,7 +14,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 </head>
-<div class="container">
+
+<div class="container text-center">
 
   <h1>Deportes</h1>
   <div action="/agregar" class="border rounded p-4">
@@ -33,7 +34,7 @@
       </div>
     </div>
 
-    <button class="btn btn-info" onclick="agregar()">Agregar</button>
+    <button class="btn btn-success" onclick="agregar()">Agregar</button>
   </div>
 </div>
 
@@ -66,7 +67,7 @@
           <td>${d.nombre}</td>
           <td>${d.precio}</td>
           <td>
-            <button class="btn btn-warning" onclick='preEdit("${d.nombre}","${d.precio
+            <button class="btn btn-info" onclick='preEdit("${d.nombre}","${d.precio
           }")' data-toggle="modal" data-target="#exampleModal">Editar</button>
             <button class="btn btn-danger" onclick='eliminar("${d.nombre}")'>Eliminar</button>
           </td>
@@ -131,7 +132,7 @@
           </div>
         </div>
 
-        <button class="btn btn-warning" onclick="edit()">Editar</button>
+        <button class="btn btn-info" onclick="edit()">Editar</button>
       </div>
     </div>
   </div>
